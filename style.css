@@ -1,0 +1,321 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+    --f1-red: #E10600;
+    --f1-black: #15151E;
+    --f1-white: #F0F0F0;
+    --f1-grey: #33333D;
+    --f1-gold: #FFD700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace; /* Fonte para o corpo do texto */
+    background-color: var(--f1-black);
+    color: var(--f1-white);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--f1-grey);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+}
+
+/* Header F1 */
+.f1-header {
+    background-color: var(--f1-red);
+    color: var(--f1-white);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Para esconder qualquer coisa que saia do header */
+}
+
+.f1-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.2) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2) 75%, transparent 75%, transparent);
+    background-size: 20px 20px; /* Padrão de bandeira quadriculada */
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.f1-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
+.f1-header h1 {
+    font-family: 'Fjalla One', sans-serif; /* Fonte impactante para o título */
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.f1-header p {
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.leader-board {
+    background-color: var(--f1-black);
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 50px; /* Formato oval */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--f1-gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.leader-board h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--f1-gold);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.leader-info {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--f1-white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.leader-info .pilot-name {
+    color: var(--f1-gold);
+    font-size: 1.6em;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: var(--f1-black);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--f1-red);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid var(--f1-red);
+    padding-bottom: 10px;
+}
+
+/* Tabela de Classificação */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--f1-grey);
+    border-radius: 8px;
+    overflow: hidden; /* Para garantir que as bordas arredondadas funcionem */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--f1-black);
+}
+
+table thead {
+    background-color: var(--f1-red);
+    color: var(--f1-white);
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2); /* Linhas alternadas */
+}
+
+table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr.leader-row {
+    background-color: var(--f1-gold);
+    color: var(--f1-black);
+    font-weight: bold;
+}
+
+/* Resultados por Etapa */
+.race-results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.race-card {
+    background-color: var(--f1-grey);
+    border: 1px solid var(--f1-red);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.race-card h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--f1-gold);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.race-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.race-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.race-card ul li:last-child {
+    border-bottom: none;
+}
+
+.race-card .pilot-name-result {
+    font-weight: bold;
+    color: var(--f1-white);
+}
+
+.race-card .points-result {
+    color: var(--f1-gold);
+    font-weight: bold;
+}
+
+/* Footer */
+.f1-footer {
+    background-color: var(--f1-black);
+    color: var(--f1-white);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-top: 2px solid var(--f1-red);
+}
+
+.f1-footer p {
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .f1-header h1 {
+        font-size: 2em;
+    }
+
+    .leader-board {
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+
+    .leader-board h2 {
+        font-size: 1.2em;
+    }
+
+    .leader-info {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .f1-header h1 {
+        font-size: 1.6em;
+    }
+
+    .f1-header p {
+        font-size: 0.9em;
+    }
+
+    .f1-logo {
+        width: 60px;
+    }
+
+    .leader-board {
+        padding: 8px 15px;
+    }
+
+    .leader-board h2 {
+        font-size: 1em;
+    }
+
+    .leader-info {
+        font-size: 1em;
+    }
+
+    .race-card {
+        padding: 15px;
+    }
+
+    .race-card h3 {
+        font-size: 1.3em;
+    }
+}
