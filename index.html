@@ -24,20 +24,43 @@
     </header>
 
     <main class="container">
-        <section class="championship-standings">
-            <h2>Classificação Geral</h2>
-            <table id="standings-table">
-                <thead>
-                    <tr>
-                        <th>Pos.</th>
-                        <th>Piloto</th>
-                        <th>Pontos Totais</th>
+        <div class="championship-standings-container">
+            <section class="championship-standings">
+                <h2>Classificação Geral</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Geral</button>
+                    <button class="filter-btn" data-filter="human">Pessoas</button>
+                    <button class="filter-btn" data-filter="ai">IA</button>
+                </div>
+                <table id="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Piloto</th>
+                            <th>Pontos Totais</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </section>
+            
+            <section class="constructors-standings">
+                <h2>Classificação de Construtores</h2>
+                <table id="constructors-table">
+                    <thead>
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Construtor</th>
+                            <th>Pontos Totais</th>
                         </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     </tbody>
-            </table>
-        </section>
+                </table>
+            </section>
+        </div>
+
 
         <section class="race-results">
             <h2>Resultados por Etapa</h2>

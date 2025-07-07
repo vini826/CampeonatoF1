@@ -70,7 +70,7 @@ body {
 }
 
 .f1-logo {
-    width: 80px;
+    width: 200px;  /* Tamanho aumentado */
     height: auto;
     margin-bottom: 10px;
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
@@ -144,16 +144,30 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border-bottom: 2px solid var(--f1-red);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 600px;
+
     padding-bottom: 10px;
 }
 
 /* Tabela de Classificação */
+.championship-standings-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as tabelas quebrem para a linha de baixo em telas menores */
+    justify-content: space-around; /* Distribui o espaço entre as tabelas */
+    align-items: flex-start; /* Alinha o topo das tabelas */
+    gap: 20px; /* Espaçamento entre as tabelas */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: var(--f1-grey);
-    border-radius: 8px;
+    border-radius: 8px;;
     overflow: hidden; /* Para garantir que as bordas arredondadas funcionem */
 }
 
@@ -210,31 +224,86 @@ table tbody tr.leader-row {
     text-transform: uppercase;
 }
 
-.race-card ul {
-    list-style: none;
-    padding: 0;
+/* Tabela de resultados dentro dos cards de etapa */
+.race-results-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    font-size: 0.9em;
 }
 
-.race-card ul li {
-    padding: 8px 0;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.race-results-table th {
+    color: var(--f1-red);
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid var(--f1-red);
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;
 }
 
-.race-card ul li:last-child {
+.race-results-table td {
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--f1-grey);
+    vertical-align: middle;
+}
+
+.race-results-table tbody tr:last-child td {
     border-bottom: none;
 }
 
-.race-card .pilot-name-result {
-    font-weight: bold;
-    color: var(--f1-white);
+.race-results-table .team-name {
+    font-size: 0.9em;
+    opacity: 0.8;
 }
 
-.race-card .points-result {
+.race-results-table .points-cell {
     color: var(--f1-gold);
     font-weight: bold;
+    text-align: center;
+}
+
+.race-results-table .type-human {
+    color: #81C784; /* Verde para Pessoa */
+}
+
+.race-results-table .type-ai {
+    color: #64B5F6; /* Azul para IA */
+}
+
+/* Botões de Filtro */
+.filter-buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px;
+    margin-bottom: 20px; /* Espaço abaixo dos botões */
+}
+
+.filter-btn {
+    font-family: 'Fjalla One', sans-serif; /* Usa a fonte de título */
+    background-color: var(--f1-grey);
+    color: var(--f1-white);
+    border: 2px solid var(--f1-grey);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    transition: all 0.3s ease; /* Transição suave para tudo */
+}
+
+.filter-btn:hover {
+    background-color: var(--f1-black);
+    border-color: var(--f1-white);
+}
+
+.filter-btn.active {
+    background-color: var(--f1-red);
+    color: var(--f1-white);
+    border-color: var(--f1-red);
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.5); /* Adiciona um brilho ao botão ativo */
 }
 
 /* Footer */
