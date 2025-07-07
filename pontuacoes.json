@@ -3,48 +3,26 @@
     "etapa": 1,
     "circuito": "Bahrain",
     "resultados": [
-      {"piloto": "Max Verstappen", "pontos": 25},
-      {"piloto": "Sergio Perez", "pontos": 18},
-      {"piloto": "Lewis Hamilton", "pontos": 15},
-      {"piloto": "Charles Leclerc", "pontos": 12},
-      {"piloto": "Lando Norris", "pontos": 10},
-      {"piloto": "Carlos Sainz", "pontos": 8},
-      {"piloto": "George Russell", "pontos": 6},
-      {"piloto": "Fernando Alonso", "pontos": 4},
-      {"piloto": "Esteban Ocon", "pontos": 2},
-      {"piloto": "Pierre Gasly", "pontos": 1}
-    ]
-  },
-  {
-    "etapa": 2,
-    "circuito": "Jeddah",
-    "resultados": [
-      {"piloto": "Max Verstappen", "pontos": 25},
-      {"piloto": "Charles Leclerc", "pontos": 18},
-      {"piloto": "Sergio Perez", "pontos": 15},
-      {"piloto": "Lewis Hamilton", "pontos": 12},
-      {"piloto": "Lando Norris", "pontos": 10},
-      {"piloto": "George Russell", "pontos": 8},
-      {"piloto": "Carlos Sainz", "pontos": 6},
-      {"piloto": "Fernando Alonso", "pontos": 4},
-      {"piloto": "Oscar Piastri", "pontos": 2},
-      {"piloto": "Lance Stroll", "pontos": 1}
-    ]
-  },
-  {
-    "etapa": 3,
-    "circuito": "Melbourne",
-    "resultados": [
-      {"piloto": "Carlos Sainz", "pontos": 25},
-      {"piloto": "Charles Leclerc", "pontos": 18},
-      {"piloto": "Lando Norris", "pontos": 15},
-      {"piloto": "Oscar Piastri", "pontos": 12},
-      {"piloto": "Sergio Perez", "pontos": 10},
-      {"piloto": "Fernando Alonso", "pontos": 8},
-      {"piloto": "Lance Stroll", "pontos": 6},
-      {"piloto": "Yuki Tsunoda", "pontos": 4},
-      {"piloto": "Nico Hulkenberg", "pontos": 2},
-      {"piloto": "Kevin Magnussen", "pontos": 1}
+      {"pos": 1, "piloto": "ViniChiabai", "equipe": "Scuderia Ferrari HP", "pontos": 25, "tipo": "Pessoa"},
+      {"pos": 2, "piloto": "MacielBaka", "equipe": "Aston Martin", "pontos": 19, "tipo": "Pessoa"},
+      {"pos": 3, "piloto": "Rafaelzzzzz", "equipe": "Williams", "pontos": 15, "tipo": "Pessoa"},
+      {"pos": 4, "piloto": "Blocky WP", "equipe": "Visa Cash App RB", "pontos": 12, "tipo": "Pessoa"},
+      {"pos": 5, "piloto": "George RUSSELL", "equipe": "Mercedes-AMG Petronas", "pontos": 10, "tipo": "IA"},
+      {"pos": 6, "piloto": "Pierre GASLY", "equipe": "Alpine", "pontos": 8, "tipo": "IA"},
+      {"pos": 7, "piloto": "Fernando ALONSO", "equipe": "Aston Martin", "pontos": 6, "tipo": "IA"},
+      {"pos": 8, "piloto": "Valtteri BOTTAS", "equipe": "KICK Sauber", "pontos": 4, "tipo": "IA"},
+      {"pos": 9, "piloto": "Felipao", "equipe": "McLaren", "pontos": 2, "tipo": "Pessoa"},
+      {"pos": 10, "piloto": "Lando NORRIS", "equipe": "McLaren", "pontos": 1, "tipo": "IA"},
+      {"pos": 11, "piloto": "Yuki Tsunoda", "equipe": "Visa Cash App RB", "pontos": 0, "tipo": "IA"},
+      {"pos": 12, "piloto": "Lewis HAMILTON", "equipe": "Mercedes-AMG Petronas", "pontos": 0, "tipo": "IA"},
+      {"pos": 13, "piloto": "Alexander ALBON", "equipe": "Williams", "pontos": 0, "tipo": "IA"},
+      {"pos": 14, "piloto": "Nicolas", "equipe": "Haas", "pontos": 0, "tipo": "IA"},
+      {"pos": 15, "piloto": "Esteban Ocon", "equipe": "Alpine", "pontos": 0, "tipo": "IA"},
+      {"pos": 16, "piloto": "Nico HULKENBERG", "equipe": "Haas", "pontos": 0, "tipo": "IA"},
+      {"pos": 17, "piloto": "Vini Baptista", "equipe": "Red Bull", "pontos": 0, "tipo": "Pessoa"},
+      {"pos": 18, "piloto": "Carlos SAINZ", "equipe": "Scuderia Ferrari HP", "pontos": 0, "tipo": "IA"},
+      {"pos": 19, "piloto": "Max Verstappen", "equipe": "Red Bull", "pontos": 0, "tipo": "IA"},
+      {"pos": 20, "piloto": "Zhou Guanyu", "equipe": "KICK Sauber", "pontos": 0, "tipo": "IA"}
     ]
   }
 ]
