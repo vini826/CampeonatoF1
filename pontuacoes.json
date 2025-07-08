@@ -24,5 +24,31 @@
       {"pos": 19, "piloto": "Max Verstappen", "equipe": "Red Bull", "pontos": 0, "tipo": "IA"},
       {"pos": 20, "piloto": "Zhou Guanyu", "equipe": "KICK Sauber", "pontos": 0, "tipo": "IA"}
     ]
+  },
+  {
+    "etapa": 2,
+    "circuito": "Australia",
+    "resultados": [
+      {"pos": 1, "piloto": "ViniChiabai", "equipe": "Scuderia Ferrari HP", "pontos": 26, "tipo": "Pessoa"},
+      {"pos": 2, "piloto": "MacielBaka", "equipe": "Aston Martin", "pontos": 18, "tipo": "Pessoa"},
+      {"pos": 3, "piloto": "Valtteri BOTTAS", "equipe": "KICK Sauber", "pontos": 15, "tipo": "IA"},
+      {"pos": 4, "piloto": "Alexander ALBON", "equipe": "Williams", "pontos": 12, "tipo": "IA"},
+      {"pos": 5, "piloto": "Pierre GASLY", "equipe": "Alpine", "pontos": 10, "tipo": "IA"},
+      {"pos": 6, "piloto": "Zhou Guanyu", "equipe": "KICK Sauber", "pontos": 8, "tipo": "IA"},
+      {"pos": 7, "piloto": "Nico HULKENBERG", "equipe": "Haas", "pontos": 6, "tipo": "IA"},
+      {"pos": 8, "piloto": "Lewis HAMILTON", "equipe": "Mercedes-AMG Petronas", "pontos": 4, "tipo": "IA"},
+      {"pos": 9, "piloto": "George RUSSELL", "equipe": "Mercedes-AMG Petronas", "pontos": 2, "tipo": "IA"},
+      {"pos": 10, "piloto": "Yuki Tsunoda", "equipe": "Visa Cash App RB", "pontos": 1, "tipo": "IA"},
+      {"pos": 11, "piloto": "Oscar PIASTRI", "equipe": "McLaren", "pontos": 0, "tipo": "IA"},
+      {"pos": 12, "piloto": "Max Verstappen", "equipe": "Red Bull", "pontos": 0, "tipo": "IA"},
+      {"pos": 13, "piloto": "Fernando ALONSO", "equipe": "Aston Martin", "pontos": 0, "tipo": "IA"},
+      {"pos": 14, "piloto": "Esteban Ocon", "equipe": "Alpine", "pontos": 0, "tipo": "IA"},
+      {"pos": 15, "piloto": "Lando NORRIS", "equipe": "McLaren", "pontos": 0, "tipo": "IA"},
+      {"pos": 16, "piloto": "Carlos SAINZ", "equipe": "Scuderia Ferrari HP", "pontos": 0, "tipo": "IA"},
+      {"pos": 17, "piloto": "Blocky WP", "equipe": "Visa Cash App RB", "pontos": 0, "tipo": "Pessoa"},
+      {"pos": 18, "piloto": "Rafaelzzzzz", "equipe": "Williams", "pontos": 0, "tipo": "Pessoa"},
+      {"pos": 19, "piloto": "Vini Baptista", "equipe": "Red Bull", "pontos": 0, "tipo": "Pessoa"},
+      {"pos": 20, "piloto": "Nicolas", "equipe": "Haas", "pontos": 0, "tipo": "Pessoa"}
+    ]
   }
 ]
