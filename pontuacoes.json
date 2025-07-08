@@ -16,7 +16,7 @@
       {"pos": 11, "piloto": "Yuki Tsunoda", "equipe": "Visa Cash App RB", "pontos": 0, "tipo": "IA"},
       {"pos": 12, "piloto": "Lewis HAMILTON", "equipe": "Mercedes-AMG Petronas", "pontos": 0, "tipo": "IA"},
       {"pos": 13, "piloto": "Alexander ALBON", "equipe": "Williams", "pontos": 0, "tipo": "IA"},
-      {"pos": 14, "piloto": "Nicolas", "equipe": "Haas", "pontos": 0, "tipo": "IA"},
+      {"pos": 14, "piloto": "Nicolas", "equipe": "Haas", "pontos": 0, "tipo": "Pessoa"},
       {"pos": 15, "piloto": "Esteban Ocon", "equipe": "Alpine", "pontos": 0, "tipo": "IA"},
       {"pos": 16, "piloto": "Nico HULKENBERG", "equipe": "Haas", "pontos": 0, "tipo": "IA"},
       {"pos": 17, "piloto": "Vini Baptista", "equipe": "Red Bull", "pontos": 0, "tipo": "Pessoa"},
