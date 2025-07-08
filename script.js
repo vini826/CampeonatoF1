@@ -30,10 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (pilotData[result.piloto]) {
                     pilotData[result.piloto].pontos += result.pontos;
                 } else {
-                    // Na primeira vez que o piloto aparece, armazena seus pontos e o tipo
+                    // Na primeira vez que o piloto aparece, armazena seus dados
                     pilotData[result.piloto] = {
                         pontos: result.pontos,
-                        tipo: result.tipo // Captura 'Pessoa' ou 'IA'
+                        tipo: result.tipo, // Captura 'Pessoa' ou 'IA'
+                        equipe: result.equipe // Armazena a equipe
                     };
                 }
 
@@ -51,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const standings = Object.keys(pilotData).map(piloto => ({
             piloto: piloto,
             pontos: pilotData[piloto].pontos,
-            tipo: pilotData[piloto].tipo
+            tipo: pilotData[piloto].tipo,
+            equipe: pilotData[piloto].equipe // Inclui a equipe nos dados de classificação
         }));
 
         // Ordenar por pontos em ordem decrescente
@@ -84,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const leaderDiv = document.getElementById('current-leader');
         if (standings.length > 0) {
             const leader = standings[0];
-            leaderDiv.innerHTML = `<p><span class="pilot-name">${leader.piloto}</span> com <span class="points-total">${leader.pontos}</span> pontos!</p>`;
+            leaderDiv.innerHTML = `<p><span class="pilot-name">${leader.piloto}</span> (${leader.equipe}) com <span class="points-total">${leader.pontos}</span> pontos!</p>`;
         } else {
             leaderDiv.innerHTML = `<p>Nenhum líder definido ainda.</p>`;
         }
@@ -102,10 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const posCell = row.insertCell();
             const pilotCell = row.insertCell();
+            const teamCell = row.insertCell(); // Célula para a equipe
             const pointsCell = row.insertCell();
 
             posCell.textContent = index + 1;
             pilotCell.textContent = entry.piloto;
+            teamCell.textContent = entry.equipe; // Adiciona o nome da equipe
             pointsCell.textContent = entry.pontos;
         });
     }
