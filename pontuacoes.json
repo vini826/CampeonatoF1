@@ -50,5 +50,10 @@
       {"pos": 19, "piloto": "Vini Baptista", "equipe": "Red Bull", "pontos": 0, "tipo": "Pessoa"},
       {"pos": 20, "piloto": "Nicolas", "equipe": "Haas", "pontos": 0, "tipo": "Pessoa"}
     ]
+  },
+  {
+    "etapa": 3,
+    "circuito": "Baku",
+    "resultados": []
   }
 ]
